@@ -52,7 +52,7 @@ it includes the topics of 'transaction relay policy', 'funding network security 
 
 2015-05-28 - [Replace by Fee is Harmful] (https://www.reddit.com/r/Bitcoin/comments/30lxo4/replace_by_fee_a_counter_argument_by_mike_hearn/)
 
-2015-06-19 - [F2Pool enabled Full RBF] - (https://www.reddit.com/r/Bitcoin/comments/3ae2e1/peter_todd_f2pool_enabled_full_replacebyfee_rbf/)
+2015-06-19 - [F2Pool enabled Full RBF] (https://www.reddit.com/r/Bitcoin/comments/3ae2e1/peter_todd_f2pool_enabled_full_replacebyfee_rbf/)
 
 2015-05-07 - [Block size increase] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-May/007880.html)
 
