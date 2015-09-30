@@ -7,9 +7,9 @@
 
 2013-03-12 - [Recommendation to miners and merchants in the aftermath of the fork.][0.7_fork_alert] 
 
-2013-03-12 - [Conflict between the v0.8 and v0.7 versions of bitcoind, causing historic forking event in 2013][0.7_fork_event]
-
 ### Low Signal links
+
+2013-03-12 - [Conflict between the v0.8 and v0.7 versions of bitcoind, causing historic forking event in 2013][0.7_fork_event]
 
 [//]: ##
 
