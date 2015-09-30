@@ -43,3 +43,7 @@ Fee Sniping: Miners try to re-mine the most recent block so that they may steal 
 2011-09-25 - [Network-Adjusted transaction fees] (https://bitcointalk.org/index.php?topic=45665.0)
 
 2014-06-09 - [Earn 1% more by mining replace-by-fee] (https://bitcointalk.org/index.php?topic=645120.0)
+
+###### Contributors
+
+David Vorick
