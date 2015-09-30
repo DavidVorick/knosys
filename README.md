@@ -1,0 +1,3 @@
+# knosys
+
+Bitcoin knowledge systemization
