@@ -1,16 +1,22 @@
 ##Overview
 
-This page contains a bunch of links related to transaction fees. Currently, 
-it includes the topics of 'transaction relay policy', 'funding network security (miners)',
-'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE' 'child-pays-for-parent', 'fee discovery'.
+Transaction fees are coins in transactions that are given to miners when the transaction is mined into a block. The transaction fee is given to the miner, which provides an incentive for the miner to place the transaction into a block. There is a non-zero cost associated with including a transaction into a block. Blocks with transaction propagate through the network slower than blocks without transactions. Slower propagating blocks are at higher risk of being orphaned. Infrastructure such as [IBLTs] and [Near Blocks] help reduce the orphan rate on larger blocks, and therefore help reduce the cost of adding a transaction to a block.
+
+Because of the block size limit, only a finite number of transactions can be included into a block. Transaction fees establish a way to pick which transactions should go into a block. Transactions with insufficient fees may get stuck on the network, which can be espeically problematic when mempools never prune the transaction and also never accept a double spend of the outputs in the unconfirmed transaction. Policies such as [Replace By Fee] and [Child Pays for Parent] affect transaction circulation. Wallets can avoid making destined-to-fail transactions by participating in [Fee Discovery].
+
+Fees are added to transactions by having the sum of the outputs of the transaction be less than the sum of the inputs of the transaction. People have infrequently added an absurd transaction fee to a transaction by miscalculating the outputs. The transaction fee cannot be determined by looking at the transaction alone, additional information about the outputs being spent is required. These shortcomings have led to proposals such as [OP_FEE] and [OP_CHECKFEE].
+
+The current block reward is 25 Bitcoins. Eventually, this reward will fall heavily towards 0. With a 0-value block reward, the primary source of income for miners becomes transaction fees. This can lead to issues such as [Fee Sniping] and [Underfunded Mining].
+
+Links on this page include the topics of 'transaction relay policy', 'miner income', 'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE' 'child-pays-for-parent', 'fee discovery'.
 
 #### Vocabulary
 
-**CPFP/CP4P**: Child Pays For Parent
+**CPFP/CP4P**: Child Pays For Parent - a child transaction with high fees can incentivize miners to add the unconfirmed parent transaction to a block.
 
 **Fee Sniping**: Miners try to re-mine the most recent block so that they may steal the fees in the block.
 
-**RBF**: Replace By Fee
+**RBF**: Replace By Fee - the outputs of an unconfirmed transaction are double-spent in a new transaction with higher miner fees.
 
 ##High Signal Links
 
