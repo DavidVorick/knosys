@@ -1,6 +1,6 @@
 # Bitcoin Knowledge Systemization
 
-The primary goal of this repository is to simplify the process of learning the state-of-the-art with regards to Bitcoin and cryptocurrency in general. A first goal is providing links to all knowledge, and sorting the links by category. A second goal is summarizing each category and curating the links so that the most relevent information is easily accessible and noiser or redundant information sources are separated or pruned. A third goal is making sure that there is fluid and easy direction when learning - categories should comfortably link to prerequisite or related categories.
+The primary goal of this repository is to simplify the process of learning the state-of-the-art with regards to Bitcoin and cryptocurrency in general. A first goal is providing links to all knowledge, and sorting the links by category. A second goal is summarizing each category and curating the links so that the most relevant information is easily accessible and noisier or redundant information sources are separated or pruned. A third goal is making sure that there is fluid and easy direction when learning - categories should comfortably link to prerequisite or related categories.
 
 A single link or discussion may be relevant to multiple categories. When this is the case, the link should appear in all categories.
 
@@ -16,7 +16,11 @@ http://diyhpl.us/~bryan/irc/bitcoin/utxo-commitments-or-fraud-proofs.stdout.txt
 
 http://diyhpl.us/wiki/bitcoin/big-pile/
 
-### High Signal vs. Low Signal Links
+### Overviews
+
+Overviews should be high signal and broad. Related topics should be mentioned. If anything is explained, it should be explained in the style of a reference, and not be explained as though the concept is being introduced to someone who doesn't know what it is. Introductory explanations and in-depth analyses belong in the 'high signal links' with an appropriate title.
+
+### High Signal vs.. Low Signal Links
 
 A high signal link contains content that is largely up-to-date and state-of-the-art, concise, and directly relevant to the category where the link is listed.
 
