@@ -1,4 +1,4 @@
-# Bitcoin Knowledge Systemizaiton
+# Bitcoin Knowledge Systemization
 
 The primary goal of this repository is to simplify the process of learning the state-of-the-art with regards to Bitcoin and cryptocurrency in general. A first goal is providing links to all knowledge, and sorting the links by category. A second goal is summarizing each category and curating the links so that the most relevent information is easily accessible and noiser or redundant information sources are separated or pruned. A third goal is making sure that there is fluid and easy direction when learning - categories should comfortably link to prerequisite or related categories.
 
