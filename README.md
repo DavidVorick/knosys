@@ -15,3 +15,11 @@ http://diyhpl.us/~bryan/irc/bitcoin/bitcoin-selected-bookmarks.2015-09-09.txt
 http://diyhpl.us/~bryan/irc/bitcoin/utxo-commitments-or-fraud-proofs.stdout.txt
 
 http://diyhpl.us/wiki/bitcoin/big-pile/
+
+### High Signal vs. Low Signal Links
+
+A high signal link contains content that is largely up-to-date and state-of-the-art, concise, and directly relevant to the category where the link is listed.
+
+A low signal link may contain content that is not fully up to date, may contain inaccurate content, or may contain large volumes of content that are not directly relevant to the category.
+
+Links are approximately sorted by signal strength.
