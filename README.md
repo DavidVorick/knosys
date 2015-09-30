@@ -7,3 +7,11 @@ A single link or discussion may be relevant to multiple categories. When this is
 This repository is a work in progress. Some categories, such as 'Transaction Fees' should clearly be split into multiple categories, but not enough content has been curated yet to justify the split. Many obvious categories, such as snarks, are missing altogether. If there is something missing that you feel strongly about, please pitch in and make a pull request.
 
 Any high-signal content will be merged, especially during the early days of the repository. Every week at 8pm EST, a group of people get together to work for a few hours on the repository.
+
+### Potential Sources of Information
+
+http://diyhpl.us/~bryan/irc/bitcoin/bitcoin-selected-bookmarks.2015-09-09.txt
+
+http://diyhpl.us/~bryan/irc/bitcoin/utxo-commitments-or-fraud-proofs.stdout.txt
+
+http://diyhpl.us/wiki/bitcoin/big-pile/
