@@ -2,7 +2,7 @@
 
 This page contains a bunch of links related to transaction fees. Currently, 
 it includes the topics of 'transaction relay policy', 'funding network security (miners)',
-'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE'
+'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE' 'child-pays-for-parent', 'fee discovery'.
 
 ### Vocabulary
 
