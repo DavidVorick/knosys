@@ -16,8 +16,12 @@
    [0.7_fork_event]: <https://bitcoinmagazine.com/articles/bitcoin-network-shaken-by-blockchain-fork-1363144448>
    [0.7_fork_alert]: <https://bitcointalk.org/index.php?topic=152030.0>
    [bip99]: <https://github.com/jtimon/bips/blob/bip-forks/bip-0099.mediawiki>
-   
 
+---
+   
+##### Contributors
+
+Ray Wang, David Vorick
 
 
 
