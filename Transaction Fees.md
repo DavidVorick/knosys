@@ -1,16 +1,18 @@
-###Overview
+##Overview
 
 This page contains a bunch of links related to transaction fees. Currently, 
 it includes the topics of 'transaction relay policy', 'funding network security (miners)',
 'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE' 'child-pays-for-parent', 'fee discovery'.
 
-### Vocabulary
+#### Vocabulary
+
+**CPFP/CP4P**: Child Pays For Parent
 
 **Fee Sniping**: Miners try to re-mine the most recent block so that they may steal the fees in the block.
 
 **RBF**: Replace By Fee
 
-###High Signal Links
+##High Signal Links
 
 2015-02-12 - [Replace by fee v0.10.0rc4] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-February/007404.html)
 
@@ -22,7 +24,7 @@ it includes the topics of 'transaction relay policy', 'funding network security 
 
 2014-04-28 - [Replace-by-fee scorched-earth without child-pays-for-parent] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-April/005620.html)
 
-###Low Signal Links
+##Low Signal Links
 
 2015-06-29 - [Replace by fee deployment schedule] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-June/009253.html)
 
