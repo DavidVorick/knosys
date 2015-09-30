@@ -20,12 +20,12 @@ Fee Sniping: Instead of mining on top of a block
 
 2013-04-29 - [OP_FEE - explicit transaction fees] (https://bitcointalk.org/index.php?topic=191003.0)
 
-2013-11-22 - [OP_CHECKFEE - an opcode indicating the transaction fee (so utxo can remain unknown to hardware wallets): https://bitcointalk.org/index.php?topic=343234.0
+2013-11-22 - [OP_CHECKFEE - an opcode indicating the transaction fee] (so utxo can remain unknown to hardware wallets): https://bitcointalk.org/index.php?topic=343234.0
 
-2011-06-06 - Future fee policy for relaying and mining: https://bitcointalk.org/index.php?topic=12625.0
+2011-06-06 - [Future fee policy for relaying and mining] (https://bitcointalk.org/index.php?topic=12625.0)
 
-2012-06-15 - Fee policy for relaying and mining: http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2012-June/001533.html
+2012-06-15 - [Fee policy for relaying and mining] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2012-June/001533.html)
 
-2011-09-25 - Network-Adjusted transaction fees: https://bitcointalk.org/index.php?topic=45665.0
+2011-09-25 - [Network-Adjusted transaction fees] (https://bitcointalk.org/index.php?topic=45665.0)
 
-2014-06-09 - Earn 1% more by mining replace-by-fee: https://bitcointalk.org/index.php?topic=645120.0
+2014-06-09 - [Earn 1% more by mining replace-by-fee] (https://bitcointalk.org/index.php?topic=645120.0)
