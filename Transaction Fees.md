@@ -6,7 +6,7 @@ it includes the topics of 'transaction relay policy', 'funding network security 
 
 ### Vocabulary
 
-Fee Sniping: Miners try to re-mine the most recent block so that they may steal the fees in the block.
+*Fee Sniping*: Miners try to re-mine the most recent block so that they may steal the fees in the block.
 
 ###High Signal Links
 
