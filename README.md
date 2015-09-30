@@ -20,6 +20,6 @@ http://diyhpl.us/wiki/bitcoin/big-pile/
 
 A high signal link contains content that is largely up-to-date and state-of-the-art, concise, and directly relevant to the category where the link is listed.
 
-A low signal link may contain content that is not fully up to date, may contain inaccurate content, or may contain large volumes of content that are not directly relevant to the category.
+A low signal link may contain content that is not fully up to date, may contain inaccurate content, or may contain large volumes of content that are not directly relevant to the category where the link is listed.
 
 Links are approximately sorted by signal strength.
