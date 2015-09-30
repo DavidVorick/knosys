@@ -10,6 +10,8 @@ Fee Sniping: Miners try to re-mine the most recent block so that they may steal 
 
 ###High Signal Links
 
+2015-02-12 - [Replace by fee v0.10.0rc4] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-February/007404.html)
+
 2013-02-24 - [Fee backlogs discourage fee sniping] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-February/002186.html)
 
 2013-04-14 - [Funding network security in the future] (https://bitcointalk.org/index.php?topic=176684.0)
@@ -19,6 +21,8 @@ Fee Sniping: Miners try to re-mine the most recent block so that they may steal 
 2013-10-24 - [Have miners announce their required fees] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-October/003421.html)
 
 2015-07-11 - [Random block size to facilitate a fee market] (https://bitcointalk.org/index.php?topic=1117914.0)
+
+2014-08-07 - [SIGHASH_ANYONECANPAY extra inputs DoS attack] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-August/006438.html)
 
 ###Low Signal Links
 
@@ -33,6 +37,8 @@ Fee Sniping: Miners try to re-mine the most recent block so that they may steal 
 2011-06-06 - [Future fee policy for relaying and mining] (https://bitcointalk.org/index.php?topic=12625.0)
 
 2012-06-15 - [Fee policy for relaying and mining] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2012-June/001533.html)
+
+2015-05-07 - [Block size increase] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-May/007880.html)
 
 2011-09-25 - [Network-Adjusted transaction fees] (https://bitcointalk.org/index.php?topic=45665.0)
 
