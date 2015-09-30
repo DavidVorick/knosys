@@ -6,7 +6,7 @@ it includes the topics of 'transaction relay policy', 'funding network security 
 
 ### Vocabulary
 
-Fee Sniping: Instead of mining on top of a block 
+Fee Sniping: Miners try to re-mine the most recent block so that they may steal the fees in the block.
 
 ###High Signal Links
 
@@ -14,13 +14,21 @@ Fee Sniping: Instead of mining on top of a block
 
 2013-04-14 - [Funding network security in the future] (https://bitcointalk.org/index.php?topic=176684.0)
 
+2014-04-28 - [Replace-by-fee scorched-earth without child-pays-for-parent] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-April/005620.html)
+
+2013-10-24 - [Have miners announce their required fees] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-October/003421.html)
+
 2015-07-11 - [Random block size to facilitate a fee market] (https://bitcointalk.org/index.php?topic=1117914.0)
 
 ###Low Signal Links
 
+2014-04-24 - [Replace by fee game theory] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-April/005504.html)
+
 2013-04-29 - [OP_FEE - explicit transaction fees] (https://bitcointalk.org/index.php?topic=191003.0)
 
 2013-11-22 - [OP_CHECKFEE - an opcode indicating the transaction fee] (so utxo can remain unknown to hardware wallets): https://bitcointalk.org/index.php?topic=343234.0
+
+2013-09-23 - [Near Blocks for Fee Estimation] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-September/003275.html)
 
 2011-06-06 - [Future fee policy for relaying and mining] (https://bitcointalk.org/index.php?topic=12625.0)
 
