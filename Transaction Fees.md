@@ -44,6 +44,8 @@ Fee Sniping: Miners try to re-mine the most recent block so that they may steal 
 
 2014-06-09 - [Earn 1% more by mining replace-by-fee] (https://bitcointalk.org/index.php?topic=645120.0)
 
-###### Contributors
+------
+
+##### Contributors
 
 David Vorick
