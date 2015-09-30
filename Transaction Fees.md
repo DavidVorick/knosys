@@ -1,17 +1,17 @@
-Overview:
+###Overview:
 
 This page contains a bunch of links related to transaction fees. Currently, 
 it includes the topics of 'transaction relay policy', 'funding network security (miners)',
 'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE'
 
 
-High Signal Links:
+###High Signal Links:
 
 2013-04-14 - Funding network security in the future: https://bitcointalk.org/index.php?topic=176684.0
 
 2015-07-11 - Random block size to facilitate a fee market: https://bitcointalk.org/index.php?topic=1117914.0
 
-Low Signal Links:
+###Low Signal Links:
 
 2013-04-29 - OP_FEE - explicit transaction fees: https://bitcointalk.org/index.php?topic=191003.0
 
