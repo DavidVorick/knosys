@@ -8,8 +8,6 @@ Fees are added to transactions by having the sum of the outputs of the transacti
 
 The current block reward is 25 Bitcoins. Eventually, this reward will fall heavily towards 0. With a 0-value block reward, the primary source of income for miners becomes transaction fees. This can lead to issues such as [Fee Sniping] and [Underfunded Mining].
 
-Links on this page include the topics of 'transaction relay policy', 'miner income', 'network fee policy', 'replace-by-fee,' 'fee sniping', 'fee sharing', 'OP_FEE' 'child-pays-for-parent', 'fee discovery'.
-
 #### Vocabulary
 
 **CPFP/CP4P**: Child Pays For Parent - a child transaction with high fees can incentivize miners to add the unconfirmed parent transaction to a block.
