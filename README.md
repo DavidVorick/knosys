@@ -10,11 +10,13 @@ Any high-signal content will be merged, especially during the early days of the 
 
 ### Potential Sources of Information
 
-http://diyhpl.us/~bryan/irc/bitcoin/bitcoin-selected-bookmarks.2015-09-09.txt
+[Bryan Bishop selected bookmarks](http://diyhpl.us/~bryan/irc/bitcoin/bitcoin-selected-bookmarks.2015-09-09.txt)
 
-http://diyhpl.us/~bryan/irc/bitcoin/utxo-commitments-or-fraud-proofs.stdout.txt
+[Bryan Bishop utxo-commitments or fraud proofs](http://diyhpl.us/~bryan/irc/bitcoin/utxo-commitments-or-fraud-proofs.stdout.txt)
 
-http://diyhpl.us/wiki/bitcoin/big-pile/
+[Bryan Bishop big pile](http://diyhpl.us/wiki/bitcoin/big-pile/)
+
+[Brett Scott an epic list of bitcoin research](https://docs.google.com/spreadsheets/d/1VaWhbAj7hWNdiE73P-W-wrl5a0WNgzjofmZXe0Rh5sg/edit?pli=1#gid=0)
 
 ### Overviews
 
