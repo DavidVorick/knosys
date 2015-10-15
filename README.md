@@ -20,7 +20,7 @@ http://diyhpl.us/wiki/bitcoin/big-pile/
 
 Overviews should be high signal and broad. Related topics should be mentioned. If anything is explained, it should be explained in the style of a reference, and not be explained as though the concept is being introduced to someone who doesn't know what it is. Introductory explanations and in-depth analyses belong in the 'high signal links' with an appropriate title.
 
-### High Signal vs.. Low Signal Links
+### High Signal vs. Low Signal Links
 
 A high signal link contains content that is largely up-to-date and state-of-the-art, concise, and directly relevant to the category where the link is listed.
 
