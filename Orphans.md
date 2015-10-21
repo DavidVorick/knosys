@@ -1,4 +1,14 @@
-#Orphans
+## Overview
+
+An orphan is an object with no known parent. Orphan also frequently refers to a
+block that is not in the longest known blockchain.
+
+#### Vocabulary
+
+**Orphan** - A block whose parent block is unknown. The term 'orphan block' is
+also frequently used in place of the term 'stale block'.
+
+**Stale Block** - A block that is valid but does not extend the longest chain.
 
 ##High signal links
 2015-08-29 [Requesting parents for orphan transactions](https://bitcointalk.org/index.php?topic=1065390.0)
@@ -23,7 +33,7 @@
 
 2014-11-15 [Chain reorganization](https://en.bitcoin.it/wiki/Chain_Reorganization)
 
-2015-03-09 [Sidechains talk, Matt Corallo](http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2015/matt-corallo-sidechains/)
+2015-03-09 [Sidechains talk](http://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2015/matt-corallo-sidechains/)
 
 2015-08-29 [Decoupling transactions and POW](https://bitcointalk.org/index.php?topic=179598.0)
 
