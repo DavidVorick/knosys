@@ -1,0 +1,487 @@
+First presented is the idea of a 'Stake Oracle', which is a generalization of
+existing concepts appearing in modern decentralized prediction markets such as
+Truthcoin [1] and Augur [2]. Second presented is an analysis of the stake
+oracles used by Truthcoin and Augur. Finally, a new foundation for
+decentralized prediction markets is presented that attempts to address the
+shortcomings of known stake oracle systems.
+
+[b]Stake Oracle[/b]
+
+A stake oracle is an oracle that operates using a stake based consensus
+mechanism. Stake is an arbitrarily divisible asset owned by one or more
+stakeholders. Decisions are made by a voting process, and stakeholders get
+voting power proportional to the amount of stake they own. A strict
+interpretation of the votes allows the oracle to make a single revelation that
+can be recognized as consensus between the stakeholders.
+
+The primary use of a stake oracle is to provide insight about events external
+to the cryptocurrency in which they operate. This is a service which can be
+bought, thus providing an income for the stake oracle. The income is divided
+among the stakeholders proportional to the volume of stake owned. The stake
+can be given a market value equal to the expected sum of all future payments.
+Stakeholders thus have a financial incentive to protect the trustworthiness of
+the oracle - incoherent or dishonest voting will damage the trust in the stake
+oracle, which will damage the income of the oracle - nobody will pay for a
+broken oracle. The valuation of the oracle's stake is a prediction market of
+the total expected future income of the oracle.
+
+Consensus:
+
+Decentraliezd stake oracles require consensus over who owns the stake, and
+which votes have been submitted. If a voter creates two different valid votes,
+there must be a way to determine which vote is accepted by the majority.
+Proof-of-work blockchains such as the Bitcoin blockchain [8] provide a
+well-researched method of achieving decentralized consensus around ownership
+and event ordering.
+
+Incentives:
+
+Stake oracles incentivize honesty among stakeholders through potential future
+revenue. If a stake oracle ever reveals incorrect information about the
+physical world, all confidence in the stake oracle will evaporate and the
+stake oracle will not be used again for fear of continued abuse. The income
+and value of the stake will drop, financially damaging the stakeholders.
+
+Verifying an oracle's trustworthiness requires auditability by the customers
+of the oracle (typically the general public). If an oracle is dishonest and
+nobody is able to realize it, the oracle will not begin losing contracts. The
+incentive model is only intact when all contracts from the oracle are fully
+auditable by all potential sources of revenue for the oracle.
+
+Exit scams lose financial incentive because stake can be sold for income. In a
+healthy ecosystem, any attempted malice will have a severe negative impact on
+the value of the stake that is greater than the potential profit from a
+successful attack. The value of the stake will fall whether the attack is
+successful or not because it will be transparent to the ecosystem surrounding
+the oracle.
+
+A stake oracle with a monopoly may be able to make abusive or malicious
+predictions without having the value drop significantly - if it is the only
+oracle available, people may be willing to pay for its services despite the
+risk of malice. If there are easily accessible competing stake oracles, the
+financial cost of dishonesty is much higher for an individual stake oracle.
+Stake oracles have stronger financial incentives towards honesty in a
+competitive environment.
+
+Oracle Confusion:
+
+Oracle confusion occurs when each stakeholder believes that they are
+submitting the correct result, yet the stakeholders present different results.
+As an example, consider a binary reveal for "The Price of Bitcoin will be
+above $400 on Jan 1st, 2016". If the price fluctuates above and below $400
+throughout the day, stakeholders may present different opinions on whether the
+event occurred. Or if the price only exceeds $400 on a single exchange, or if
+there is apparent market manipulation trying to push the price up temporarily,
+stakeholders may have different judgements about what happened. This is just
+one example - there are many types of questions and situations which may cause
+oracle confusion.
+
+Voter Exhaustion:
+
+Stakeholders of a stake oracle face the risk exhaustion when handling oracle
+contracts. If too many are presented, stakeholders may find themselves unable
+to keep up with the volume, even if each contract only takes a few seconds to
+resolve. Even in the automated case, there is the risk that the stake oracle
+takes on more work than can be successfully managed by the stakeholders.
+There must therefore be some method of controlling the volume of contracts
+accepted by the stake oracle. Exhaustion also creates centralization pressure.
+As the volume of contracts increase, increasingly specialized stakeholders are
+needed to keep up with the volume. Potential stakeholders who have exhaustion
+tolerance below the existing workload are excluded from participating.
+
+Poisoned Voting:
+
+A vote is considered 'poisoned' if it does not correctly reflect reality. A
+stake oracle can come to consensus on the correct interpretation of reality
+while having poisoned votes, though a stake oracle that consistently has a
+volume of poisoned votes is less secure, which should be reflected by a
+reduced price for the stake of the oracle.
+
+Stakeholders in a competitive environment are incentivized to poison the
+voting of competing stake oracles by buying stake and voting incorrectly -
+doing so reduces confidence in the competition and makes the stakeholders
+primary stake oracle seem more attractive by comparison. Financial penalties
+for poisoned voting add cost to the act of creating a posioned vote, and
+correspondingly incentive to always vote correctly. Determining whether a
+vote is poisoned or not is a non-trivial problem.
+
+Financial Games:
+
+Abusive use of financial tools such as 'shorting' may weaken the security of
+stake oracles. For example, an attacker may be able to fund their attack (even
+to the point of profit) by shorting the stake oracle asset. There is little
+that can be done by the stakeholders to prevent an attacker from shorting the
+asset, though it must be remembered that someone has to sell the short, and in
+doing so they have to account for the fact that the sale is financially
+incentivizing the buyer to attack the stake oracle. There may be additional
+financial games as well that disrupt the incentive model and security model of
+a stake oracle.
+
+Freeloaders:
+
+A large portion of the trust and incentive model of a stake oracle is derived
+from the income of the stake oracle. But the results from an oracle are easy
+to steal - once an oracle has revealed a result, the result can be copied or
+stolen without payment by an alternate chain. This behavior increases the pool
+of potential profit from an exit scam without increasing the value of the
+stake oracle for acting honestly.
+
+If a large portion of the ecosystem is freeloading, the security model becomes
+inherently unstable, and the ecosystem is put at risk. Freeloaders have
+financial incentive - they get to avoid the oracle's fees. This creates a
+classic Tragedy of the Commons [4]. A sufficiently long-range looking
+ecosystem will be able to avoid this problem, but the incentives are not well
+aligned for short-term thinking members of the ecosystem. To the best of the
+author's knowledge, this is an unsolved problem inherent to stake oracles.
+
+[b]Stake Oracles in Truthcoin[/b]
+
+Overview:
+
+The Truthcoin whitepaper defines an 'oracle corporation' which is governed by
+'VoteCoins'. An oracle corporation is analogous to a stake oracle, and
+VoteCoins are analogous to stake. VoteCoins are used to participate in
+decision making when revealing information about external events, are
+tradeable and fungible, provide income to the stakeholders, and enable
+financial penalties for dishonest or lazy voting. Anybody is allowed to author
+a prediction market which the oracle corporation will vote on. Oracle
+corporations are created by a process of 'branching', in which an existing
+oracle corporation forks into two. Stakeholders retain all stake on each
+branch initially, but are allowed to sell it separately - over time the
+branches diverge and diversify.
+
+The Truthcoin whitepaper states that "Any user can create a prediction market
+('Author a Market') about anything." The quantity of decision slots is
+ratelimited, and the fee for creating a market is driven by demand. Authors
+are also required to provide a small amount of seed capital to drive liquidity
+in a market maker that facilitates trades in Truthcoin.
+
+New oracle corporations are created through a process of splitting an existing
+oracle. The network starts with only a single oracle corporation, and all
+additional oracles must be created by splitting existing oracles. When an
+oracle is split, the stake in the new oracle matches the stake of the old
+oracle. That stake can then be traded independently.
+
+Consensus:
+
+Truthcoin uses a proof-of-work Bitcoin SPV sidechain [9] to achieve consensus.
+The pegged coins are protected at most by SPV security and the blockchain
+itself is merge-mined with the Bitcoin blockchain. A tradeoff to merge mining
+is miner apathy - income from the altchain is likely much smaller than income
+from the primary chain, potentially so much smaller that events such as
+softforks are not worth the miner's attention, adding roadblocks to making
+changes to the protocol and potentially damaging the growth of the coin in the
+early stages of refinement, bugfixing, and adjustment. There is also a
+tradeoff where the network is participating in an ecosystem with a huge amount
+of hashpower, but only a fraction of that hashpower is actually being paid
+for. Given the right financial incentive, it is not very difficult to attack a
+merge-mined currency. To the best of the author's knowledge, there has not yet
+been a successful attack on a cryptocurrency that is merge-mined with Bitcoin.
+
+Incentives:
+
+The voters in a corporation oracle have no ability to set the fees of the
+prediction market, that decision is made by the authors of the prediction
+market. Authors have strong incentives to provide low fees, as anybody can
+create any prediction market - including competing prediction markets. This
+could create ecosystems which inherently tend towards underpaid voters.
+Underpaid voters may be able to profit more from voting maliciously than from
+voting honestly, resulting in an unstable/unusable system.
+
+One of the incentive claims of the Truthcoin paper is that "Decision Authors
+have a strong incentive to only write easily measurable Decisions." The
+support for this claim is derived primarily from the idea that 'unclear
+decisions are unprofitable'. This should read 'unclear decisions are
+unprofitable for honest voters'. Authors are however a separate group from
+voters and may find significant profit opportunity in the authorship of
+unclear markets. Authors are strongly incentivzed to author prediction markets
+that will be profitable from traders, and there is no guarantee that trades
+will avoid markets that may be disruptive to the voting process.
+
+A competing oracle can only be created if stakeholders of an existing oracle
+successfully vote in favor of a split. This gives existing stakeholders great
+power over the oracle ecosystem. Even if a split is approved, the initial
+stake ownership of the new oracle matches the stake ownership of the parent
+oracle, which creates a large barrier-to-entry for creating diverse competing
+oracles. This may result in limited options for traders if one of the existing
+oracle corporations begins making incorrect revelations about the physical
+world.
+
+Oracle Confusion:
+
+Anyone is allowed to create a prediction market, and as discussed in the
+incentives section, the incentives for creating voter-friendly prediction
+markets are not aligned to eliminate oracle confusion. By leveraging confusing
+prediction markets combined with a weak voter penalty algorithm, an attacker
+may be able to costlessly acquire voting power from honest voters. For
+example, if an attacker can create a set of prediction markets where they know
+honest voters will be split 20/80, the attacker can join the 80% and
+collect voting power that is penalized from the 20%. The attacker can continue
+to split voters with confusing markets and over time substantially build up
+voting power. This is called a 'confusion attack'.
+
+Voter Exhaustion:
+
+Within Truthcoin, there are a limited number of prediction markets that can be
+created, and creating one comes at a cost. This eliminates some classes of
+voter exhaustion attacks, but leaves others. For example, 'Who won the 2016 US
+Presidential election' is easy to answer, but 'The 2016 State of the Union
+address will cover the topic of internet privacy for at most 5 minutes' is
+more exhausting. It may be possible to execute a voter exhaustion attack by
+filling the prediction market slots with a suffiicent number of exhausting
+questions. A proposed solution is give voters the ability to acknowledge a
+question as 'too difficult', however this solution opens up voters to
+confusion attacks - 'too difficult' is not sufficiently specific to guarantee
+that all voters will be in consensus about what counts as 'too difficult' -
+every potential definition of the term has vague boundaries that are
+insufficient for what needs to be a consensus system.
+
+Votes in Truthcoin go directly on the blockchain. Putting data on the
+blockchain requires paying a miner fee, and there is no guarantee that payout
+from voting on a prediction market is going to exceed the cost of putting a
+vote on the blockchain. Therefore, blockchain fees combined with low-payout
+markets represent another potential voter exhaustion vector.
+
+Poisoned Voting:
+
+Poisoned voting is decected and managed in Truthcoin via a complex process
+batching votes together across many prediction markets and comparing the
+variance of the answers between each voter. Voters that are least identical to
+other voters accept penalties to their stake ownership, and that stake is
+redistributed to the voters that voted most identically to other voters. An
+analysis of the techniques used by Truthcoin is discussed at [5]. The analysis
+shows significant weaknesses in the voting penalty structure of Truthcoin, and
+it is likely that a more thorough analysis would reveal further weakness.
+
+[b]Stake Oracles in Augur[/b]
+
+Augur features a single stake oracle with a fixed quantity of tradeable
+reputation that is analogous to stake. The reputation is fully premined and
+distributed according to contributions to a crowdfund. Anybody can create an
+event/prediction market on Augur by paying a nominal event creation fee. This
+fee is not set by supply and demand and there is no hard limit to the number
+of events that can be created.
+
+Consensus:
+
+Augur is built on the Ethereum platform, a virtual machine cryptocurrency that
+has a wide set of cutting-edge features, including a time-bomb on the current
+Proof-of-Work consensus algorithm that is intended to be replaced by a
+Proof-of-Stake consensus algorithm within the next year. In addition to a
+large volume of new and potentially buggy features, Ethereum features poor
+scaling properties and a limited set of resources that must be shared among
+all platforms. Augur is a heavyweight application that may become very
+expensive to run on Ethereum as the ecosystem matures and more valuable
+lightweight applications spring up.
+
+Incentives:
+
+Prediction market creation is incentivized similarly to in Truthcoin - market
+creaters make a fee-based profit when traders use their markets. Voters
+receive a portion of the fees, and are therefore given an income and able to
+place a valauation on the stake they own.
+
+The single stake oracle in Augur means that a corrupt stake oracle may be able
+to get away with lying occasionally - since there is no competition in the
+system, there is nowhere for traders to flee to in the event of apparent
+dishonesty. Furthermore, if at any point a single entity is able to achieve
+sufficient control of the stake, they will be able to maintain that control
+indefinitely. This model is very brittle, an eggs-in-one-basket approach.
+
+Oracle Confusion:
+
+Similar to Truthcoin, Augur has very little to protect against oracle
+confusion. Market creators are allowed to create any markets, and are not
+necessarily incentivized to create markets that are easy for voters to resolve
+with consensus. A malicious entitiy may be able to leverage oracle confusion
+to slowly increase stakeholdings over time.
+
+Voter Exhaustion:
+
+There is no hard limit to the number of prediction markets that can be created
+in Augur, and all voters must vote on every prediction market. As Augur grows
+in popularity, voting is likely going to require increasing specialization,
+limiting the pool of potential voters and exerting centralization pressure on
+the voting system.
+
+Poisoned Voting:
+
+Augur's approach to voter penalty algorithms is described in [5]. A clustering
+algorithm is chosen, and Monte-Carlo simulations are used to explore the
+robustness of the algorithm. While the voting penalty algorithm does seem to
+outperform the Truthcoin algorithm, the math is complex and no formal
+guarantee is provided that abuse is difficult under all potential vectors.
+
+[b]Proposal: Delphi - A Stronger Stake Oracle System[/b]
+
+Delphi is a system of stake oracles designed to facilitate decentralized
+prediction markets. Delphi features a master currency caled the 'drachma'
+which is used to price and trade oracle stake, and also to participate in
+prediction markets managed by Delphi's oracles. Consensus is managed by a
+traditional proof-of-work blockchain.
+
+Stake oracles can be created in Dephi by submitting an oracle genesis
+transaction. This transaction is responsible for distributing the initial
+stake and defining the two parameters of the oracel, the 'market creation
+threshold' and the 'penalty percentage'. Any volume of stake can be created
+and distributed in any number of outputs (other consensus rules - such as
+maximum transaction size - may be a limiting factor).
+
+The market creation threshold defines the percentage of stake that must sign a
+market genesis transaction in order for the transaction to be valid. A high
+market creation threshold means that new prediction markets are easy to
+filibuster. A low market creation threshold means that a low number of
+stakeholders will be able to create valid prediction markets, putting the
+other stakeholders at risk of confusion and exhaustion.
+
+The penalty percentage defines the percentage of stake that is foreit when a
+stakeholder is found to have submitted a posioned vote. A high penalty
+percentage strongly decentivizes risky voting and non-participation, but
+creates a brittle stake oracle - a single missed vote can have dramatic
+consequences for a stakeholder. A low penalty percantage provides more
+flexibility and tolerance for confusion and exhaustion but also means that
+there is less cost for attempted malice by attacking stakeholders.
+
+A market genesis transaction defines a prediction market with a question, a
+finite and discrete set of potential answers, a result deadline, and a
+prediction share creation fee. The question is intended to represent a future
+event whose outcome is uncertain. The results must contain all potential
+outcomes of the future event, and will be voted upon by the stakeholders
+before the result deadline. The result deadline indicates the date or block
+height by which all stakeholders must submit their vote. The prediction share
+creation fee defines the cost of introducing liquidity into the prediction
+market.
+
+Tranders buy and sell shares of the potential results of the prediction
+market. Shares can be bought at any time on the blockchain by putting drachmas
+into the prediction market. Assuming a 2% fee, paying 1 drachma into the
+prediction market will yield a 0.98 drachma share of each potential result.
+These shares can be traded on the blockchain in the same manner as drachmas.
+When the prediction market closes, one of the results will pay out its face
+value in drachmas. The fee will be distributed to the stakeholders of the
+oracle.
+
+When the prediction market closes, all stakeholders will either have submitted
+a vote towards a result or will have submitted nothing at all. A vote is
+considered 'valid' if it is cast towards the result that has the most stake
+voting for it. All other votes, including absent votes, are considered
+'poisoned'. In the event of a tie, the block id will be used to seed a random
+number generator that will select a winner. A percentage of all stake that
+submitted poisoned votes will be destroyed according to the penalty
+percentage.
+
+Within a stake oracle, voters are only allowed to vote for one prediction
+market at a time, and that must be the prediction market with the nearest
+result deadline. Stake oracles are not allowed to create prediction markets
+that have result deadlines nearer than the nearest result deadline for that
+stake oracle.
+
+Example:
+
+A stake oracle is created via an oracle genesis transaction. 33% of stake is
+given to 'A', 33% is given to 'B', and 33% is given to 'C'. The market
+creation threshold is set to 51%, and the penalty percentage is set to 100%.
+
+A market genesis transaction is created, signed by both 'A' and 'B'. The
+market contains the proposal 'Winner of the 2016 U.S. Presidential Election'
+with the results 'Hilliary Clinton', 'Donald Trump, and 'Other Result'. The
+termination date is set to Jan 1st, 2016. The fee is set to 5%.
+
+Trader 'X' buys 1 drachma of shares directly from the prediction market,
+receiving 0.95 drachmas worth of each of the 3 results. Trader 'Y' buys 0.95
+drachmas of 'Donald Trump' from trader 'X' for 0.5 drachmas out-of-band.
+
+The election passes and the stakeholders submit their results. The election is
+disputed initially, and 'A' votes for 'Other'. The dispute is resolved and
+'Donald Trump' is chosen as the winner. 'B' and 'C' then submit results for
+'Donald Trump'. Jan 1st, 2016 arrives and all 'Donald Trump' shares are
+converted into drachmas. All other shares are pruned. Trader 'X' gets no
+payout, and trader 'Y' gets a 0.95 drachma payout, having paid only 0.5
+drachmas for the share.
+
+Because 'A' voted against the winning result, 'A' is penalized according to
+the penalty percentage - all stake is forfeit. 'B' and 'C' now each own 50% of
+the stake. 0.025 drachmas are distributed to each 'B' and 'C', collected from
+the fees paid to trade on the prediction market.
+
+Consensus:
+
+Delphi uses an independent proof-of-work blockchain to achieve consensus. The
+consensus rules of the chain are heavily modeled after the consensus rules of
+the Bitcoin blockchain. A new currency, the 'drachma' must be bootstrapped and
+may be subject to heavy volatility in the early days of the network. Using a
+unique mining algorithm avoids miner apathy, but leaves the coin vulnerable to
+mining farms that hop from coin to coin until specialized hardware is created
+to mine the coin.
+
+Incentives:
+
+Oracle stakeholders are incentivized to be honest and reliable by the
+potential for future income, and because there is a low barrier-to-entry for
+creating competing stake oracles in the event of dishonesty or unreliability
+from an established stake oracle. Stake is a fully fungible asset, and can be
+sold as an alternative retirement strategy to the traditional exit scam.
+
+Oracle Confusion:
+
+Oracle stakeholders have complete control over the prediction market creation
+process, which provides strong defense against oracle confusion. Due to the
+stake penalties, stakeholders are strongly incentivized against creating
+prediction markets which can cause confusion. Delphi features two variables
+that can be set during stake oracle creation - market creation threshold and
+penalty percentage - that allows stake oracles to optimize for different risk
+tolerances. Stake oracles with market creation thresholds and penalty
+percentages are at higher risk of confusion.
+
+Voter Exhaustion:
+
+Similar to oracle confusion, stakeholders have a large amount of control over
+which prediction markets are created and how many are created. Stake oracles
+can be optimized to accept varying amounts of risk with regards to voter
+exhaustion.
+
+Poisoned Voting:
+
+Unlike Augur and Truthcoin, Delphi features a very simple method for detecting
+and managing poisoned votes. Votes are analyzed one at a time, and any vote
+towards a result that did not win the plurality of stake is considered
+poisoned. The security properties are easy to analyze - honest voters are at
+risk if they are unable to get the plurality of stake voting towards the same
+result. For all situations where the honest voters are voting on a
+non-confusing prediction market and have the majority of the of the stake,
+there will be no problems.
+
+[b]Conclusion[/b]
+
+This paper has introduced the idea of a 'stake oracle' and explored the
+potential risks and attack vectors associated with stake oracles. These
+generalizations were applied to existing decentralized prediction market
+systems to highlight a set of weaknesses. An alternative, Delphi, was proposed
+which addresses many of the concerns raised about the existing decentralized
+prediction markets.
+
+The author considers the topic of stake oracles and decentraliezd prediction
+markets to be relatively under-explored. Further exploration may reveal
+addtional strengths and weaknesses of the stake oracles discussed, or
+alternative systems which are more powerful for the purpose of facilitating
+decentralized prediction markets.
+
+[b]Citations[/b]
+
+1. http://www.truthcoin.info/papers/truthcoin-whitepaper.pdf
+
+2. http://augur.link/augur.pdf
+
+3. https://blog.ethereum.org/2015/09/03/security-alert-implementation-bug-in-go-clients-causing-increase-in-difficulty-fixed-miners-check-and-update-go-clients-if-necessary/
+
+4. https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+
+5. http://www.augur.net/blog/building-a-better-lie-detector
+
+6. https://blog.ethereum.org/2015/09/02/security-advisory-implementations-bugs-in-go-and-python-clients-can-cause-dos/
+
+7. https://www.reddit.com/r/ethereum/comments/3jynkc/difficulty_adjustment_scheme_block_200000_coming/
+
+8. https://bitcoin.org/bitcoin.pdf
+
+9. https://blockstream.com/sidechains.pdf

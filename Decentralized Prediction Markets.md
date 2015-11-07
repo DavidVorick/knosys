@@ -34,15 +34,15 @@ little cost.
 
 ## High Signal Links
 
-2014-??-?? - [On Decentralizing Prediction Markets and Order Books](https://www.cs.princeton.edu/~kroll/papers/weis14_prediction.pdf)
+2014-??-?? - [On Decentralizing Prediction Markets and Order Books](https://www.cs.princeton.edu/~kroll/papers/weis14_prediction.pdf) - 15d12ce7
 
-2015-10-07 - [Truthcoin Whitepaper](http://www.truthcoin.info/papers/truthcoin-whitepaper.pdf)
+2015-10-07 - [Truthcoin Whitepaper](http://www.truthcoin.info/papers/truthcoin-whitepaper.pdf) - 2d99ca75
 
-2015-??-?? - [Augur: a Decentralized, Open-Source Platform for Prediction Markets](http://augur.link/augur.pdf)
+2015-??-?? - [Augur: a Decentralized, Open-Source Platform for Prediction Markets](http://augur.link/augur.pdf) - c84b4a98
 
 ## Low Signal Links
 
-2015-10-?? - [Stake Oracles](http://pastebin.com/wtwW4njR)
+2015-10-?? - [Stake Oracles](http://pastebin.com/wtwW4njR) - be390bf
 
 2014-03-28 - [SchellingCoin: A Minimal-Trust Universal Data Feed](https://blog.ethereum.org/2014/03/28/schellingcoin-a-minimal-trust-universal-data-feed/)
 
