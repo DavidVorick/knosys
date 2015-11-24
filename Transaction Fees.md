@@ -10,6 +10,8 @@ The current block reward is 25 Bitcoins. Eventually, this reward will fall heavi
 
 #### Vocabulary
 
+**Bogon Fee**: A transaction fee that is substantially higher than would would be expected. Example: 50btc when the average total block reward is around 25btc.
+
 **CPFP/CP4P**: Child Pays For Parent - a child transaction with high fees can incentivize miners to add the unconfirmed parent transaction to a block.
 
 **Fee Sniping**: Miners try to re-mine the most recent block so that they may steal the fees in the block.
@@ -37,6 +39,8 @@ The current block reward is 25 Bitcoins. Eventually, this reward will fall heavi
 2015-07-11 - [Random block size to facilitate a fee market] (https://bitcointalk.org/index.php?topic=1117914.0)
 
 2014-08-07 - [SIGHASH_ANYONECANPAY extra inputs DoS attack] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-August/006438.html)
+
+2015-11-23 - [Bogon Fees & Coinbase Forwarding] (http://gnusha.org/bitcoin-wizards/2015-11-23.log)
 
 2015-06-10 - [SPV Fee Discovery mechnaism] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-June/008549.html)
 
