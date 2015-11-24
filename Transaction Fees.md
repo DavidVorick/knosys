@@ -60,6 +60,8 @@ The current block reward is 25 Bitcoins. Eventually, this reward will fall heavi
 
 2012-06-15 - [Fee policy for relaying and mining] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2012-June/001533.html)
 
+2011-11-07 - [Analysis of Bitcoin Pooled Mining Reward Systems] (https://bitcoil.co.il/pool_analysis.pdf)
+
 2015-05-28 - [Replace by Fee is Harmful] (https://www.reddit.com/r/Bitcoin/comments/30lxo4/replace_by_fee_a_counter_argument_by_mike_hearn/)
 
 2015-06-19 - [F2Pool enabled Full RBF] (https://www.reddit.com/r/Bitcoin/comments/3ae2e1/peter_todd_f2pool_enabled_full_replacebyfee_rbf/)
@@ -67,6 +69,8 @@ The current block reward is 25 Bitcoins. Eventually, this reward will fall heavi
 2015-05-07 - [Block size increase] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-May/007880.html)
 
 2011-09-25 - [Network-Adjusted transaction fees] (https://bitcointalk.org/index.php?topic=45665.0)
+
+2012-04-25 - [Mine in multiple pools to reduce variance] (https://bitcointalk.org/index.php?topic=78031.0)
 
 2015-06-24 - [Fees are Inevitable] (https://www.reddit.com/r/Bitcoin/comments/3b0593/to_fork_or_not_to_fork/cshphic)
 
