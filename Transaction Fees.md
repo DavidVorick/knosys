@@ -32,6 +32,8 @@ The current block reward is 25 Bitcoins. Eventually, this reward will fall heavi
 
 ##Low Signal Links
 
+2015-11-28 - [Replace by fee FAQ](https://www.reddit.com/r/Bitcoin/comments/3urm8o/optin_rbf_is_misunderstood_ask_questions_about_it/)
+
 2015-06-29 - [Replace by fee deployment schedule] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-June/009253.html)
 
 2013-10-24 - [Have miners announce their required fees] (http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-October/003421.html)
